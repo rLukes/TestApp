@@ -36,5 +36,20 @@ namespace TestApp.Controllers
             
             return Content(name, "text/plain");
         }
+
+        public ActionResult StudentDetails()
+        {
+            ViewBag.StudentId = 101;
+            ViewBag.StudentName = "RPSE";
+            ViewBag.Marks = 80;
+
+            return View();
+        }
+
+        public ActionResult RequestExample()
+        {
+            ViewBag.Url = Request.Url;
+            return View();
+        }
     }
 }
