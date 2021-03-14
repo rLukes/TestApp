@@ -13,5 +13,10 @@ namespace TestApp.Controllers
         {
             return View();
         }
+        public ActionResult Contact()
+        {
+            ViewBag.PhoneNr = "000-2020-00";
+            return View();
+        }
     }
 }

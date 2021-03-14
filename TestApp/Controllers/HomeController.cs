@@ -21,6 +21,7 @@ namespace TestApp.Controllers
 
         public ActionResult Contact()
         {
+            ViewBag.PhoneNr = "252522";
             return View();
         }
 
